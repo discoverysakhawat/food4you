@@ -1,0 +1,528 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  vertical-align: middle;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+
+}
+
+.clr {
+  clear: both;
+}
+
+/* All common css */
+
+
+/* Nav css start */
+#navbar {
+  /* border: 2px solid red; */
+  /* background: gray; */
+  width: 100%;
+  height: 650px;
+  background: url(../images/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+
+}
+
+.logo {
+  width: 170px;
+  float: left;
+}
+
+.logo a img {
+  width: 170px;
+  padding-top: 30px;
+  height: 80px;
+
+}
+
+.header-text {
+  width: 1000px;
+  height: 80px;
+  margin-bottom: 20px;
+  float: left;
+
+}
+
+.header-text h1 {
+  /* border: 1px solid black; */
+  /* position: absolute; */
+  text-align: right;
+  margin-top: 35px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+
+
+  /* background: red; */
+}
+
+.header-text p {
+  /* border: 1px solid black; */
+
+  text-align: right;
+  margin-top: 5px;
+  padding-bottom: 30px;
+  font-family: 'Montserrat', sans-serif;
+
+  font-size: 30px;
+  font-weight: bold;
+  right: 250px;
+  opacity: .6;
+  /* background: red; */
+}
+
+
+.main-menu .menu {
+  /* border: 2px solid red; */
+  width: 1170px;
+
+
+  /* background: palegreen; */
+  /* float: left; */
+}
+
+.main-menu .menu ul {
+  text-align: right;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.main-menu .menu ul li {
+  display: inline-block;
+  /* background: olive; */
+  margin: 0 10px;
+  position: relative;
+}
+
+.main-menu .menu ul li:hover {
+  background: red;
+
+}
+
+.main-menu .menu ul li a {
+  color: rgb(2, 20, 36);
+  font-size: 18px;
+  text-transform: capitalize;
+  padding: 10px 10px;
+  font-weight: bold;
+}
+
+.menu ul li ul {
+  width: 200px;
+  background: rgb(236, 236, 231);
+  position: absolute;
+  right: 30px;
+  top: 42px;
+  z-index: 55;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
+}
+
+.menu ul li ul li {
+  width: 100%;
+  margin: 0 0 !important;
+}
+
+.main-menu .menu ul li:hover>ul {
+  visibility: visible;
+  opacity: 1;
+
+}
+
+.main-menu .menu ul li ul li ul {
+  right: 100%;
+
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Nav css end */
+.inner {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 1000;
+}
+
+/* Banner css Start */
+.banner {
+  width: 100%;
+  /* border: 2px solid red; */
+  height: 500px;
+  /* position: relative; */
+  /* float: left; */
+}
+.inner h2 {
+  width: 170px;
+  margin: 0 20px;
+  text-align: center;
+  /* border: 1px solid black; */
+  background: rgb(143, 11, 11);
+  color: aliceblue;
+  padding: 5px 10px 5px 5px;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.banner-left {
+  text-align: center;
+  /* border: 2px solid red; */
+  width: 570px;
+  height: 500px;
+  float: left;
+  /* position: absolute; */
+
+}
+
+.banner-left h1 {
+  font-size: 45px;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  font-family: 'Redressed', cursive;
+  opacity: .8;
+
+}
+
+.banner-left h2 {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 70px;
+  opacity: .8;
+
+
+}
+
+.banner-left p {
+  font-size: 20px;
+  font-weight: bold;
+
+
+}
+
+.banner-right {
+  /* border: 2px solid red; */
+  width: 595px;
+  float: left;
+  /* position: absolute; */
+}
+
+.banner-img {
+  width: 100%;
+  height: 500px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+
+}
+
+.plus {
+  /* border: 2px solid red; */
+  font-family: 'Fredericka the Great', cursive;
+  text-align: right;
+  margin-top: 70px;
+  width: 300px;
+  float: left;
+  opacity: .7;
+}
+
+.plus h3 {
+
+  font-size: 18px;
+  padding-top: 9px;
+
+}
+
+.plus p {
+  font-size: 18px;
+  padding-top: 2px;
+
+}
+
+.plus-01 {
+  /* border: 2px solid red; */
+  margin-top: 70px;
+  text-align: left;
+  width: 200px;
+  float: left;
+  font-family: 'Fredericka the Great', cursive;
+  opacity: .7;
+}
+
+.plus-01 h3 {
+  font-size: 50px;
+  padding-left: 10px;
+}
+
+.btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: none;
+  border-width: 1px;
+  margin-top: 20px;
+}
+
+.btn a {
+  font-weight: bold;
+  color: black;
+  font-size: 16px;
+
+}
+
+/* banner css end */
+
+
+/* Choose css staet */
+#choose {
+  /* border: 2px solid red; */
+  /* background: red; */
+  width: 100%;
+  height: 170px;
+  opacity: .8;
+}
+
+.col-01 {
+  /* border: 2px solid red; */
+  width: 100%;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.col-01 h1 {
+  font-size: 35px;
+  font-family: 'Fredericka the Great', cursive;
+  opacity: .8;
+}
+
+.col-01 p {
+  font-size: 13px;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Choose css end */
+/* Features css start */
+#row-01 {
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 400px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.col-03 {
+  /* border: 2px solid red; */
+  width: 350px;
+  height: 400px;
+  float: left;
+  margin-left: 30px;
+  text-align: center
+}
+
+.col-03 img {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.col-03 h1 {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.col-03 p {
+  font-size: 13px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Features css end */
+
+/* Upcomig CSS Start */
+#upcoming {
+  /* border: 2px solid red; */
+  /* background: red; */
+  width: 100%;
+  height: 170px;
+  opacity: .8;
+}
+
+.col-02 {
+  /* border: 2px solid red; */
+  width: 100%;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.col-02 h2 {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  opacity: .8;
+}
+
+.col-02 h1 {
+  font-size: 35px;
+  font-family: 'Fredericka the Great', cursive;
+  opacity: .8;
+}
+
+.col-02 p {
+  font-size: 13px;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#row-02 {
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 400px;
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+}
+
+.col-04 {
+  /* border: 2px solid red; */
+  width: 300px;
+  height: 400px;
+  left: 20px;
+  position: absolute;
+
+}
+
+.col-04 img {
+  width: 350px;
+  margin-top: 20px;
+
+}
+
+.col-05 {
+  /* border: 2px solid red; */
+  width: 500px;
+  height: 350px;
+  left: 360px;
+  z-index: 5555;
+  position: absolute;
+
+}
+
+.col-05 img {
+  width: 440px;
+  height: 280px;
+  margin-top: 5px;
+
+}
+
+.col-06 {
+  /* border: 2px solid red; */
+  width: 350px;
+  height: 350px;
+  left: 800px;
+  position: absolute;
+}
+
+.col-06 img {
+  width: 350px;
+  margin-top: 20px;
+
+}
+
+
+#row-02 .dot {
+  text-align: center;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin-top: 300px;
+  background-color: rgb(109, 94, 94);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+#row-02 .dot:hover> {
+  background-color: #a6e70d;
+}
+
+
+/* Footer css start */
+#footer{
+  background: url(../images/footerimage.png);
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-main{
+  width: 100%;
+height: 300px;
+padding-top: 50px;
+font-family: 'Montserrat', sans-serif;
+
+}
+.col-footer{
+  width: 50%;
+  height: 300px;
+  /* background: red; */
+  float: left;
+}
+.col-footer img{
+  padding-bottom: 30px;
+  padding-left: 20px;
+}
+.col-footer h2{
+  color: rgb(208, 212, 216);
+  font-size: 14px;
+  padding-bottom: 100px;
+  padding-left: 20px;
+}
+.col-footer p{
+  font-size: 14px;
+  color: rgb(208, 212, 216);
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+.location{
+  color: rgb(208, 212, 216);
+  font-size: 14px;
+  margin-top: 150px;
+  margin-left: 50px;
+}
+.email{
+  color: rgb(208, 212, 216);
+  font-size: 14px;
+  margin-left: 50px;
+  padding-top: 10px;
+}
